@@ -15,7 +15,7 @@ function Layout() {
             <LinkContainer to="/home">
                 <Nav.Link>Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/persona">
+            <LinkContainer to="/persona/:id">
                 <Nav.Link>Persona</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/estadisticas">

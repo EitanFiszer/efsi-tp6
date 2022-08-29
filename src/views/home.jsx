@@ -10,12 +10,20 @@ export default function Home() {
   const redirigir = (url)=>{
     navigate(url);
   }
-;
+
+
+  const listaPersonas=[]
+  Personas.forEach(per => {
+    listaPersonas.push(
+        <Link to={`/persona/${per.id}`}><button>{per.nombre}</button></Link>
+    )
+});
 
   return (
     <>
         <Layout></Layout>
         <ListGroup>
+            <ListGroup.Item>{listaPersonas}</ListGroup.Item>
         </ListGroup>
     </>
   )
